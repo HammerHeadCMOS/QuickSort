@@ -106,13 +106,20 @@ int main() {
 
     ord XD;
 
-    //Cambiar el tamaño de la lista y la variable SZ xd
+    //Cambiar el tamaño de la lista y la variable SZ xd 
 
-    int list[100];
+    //take user input. 
+    // SABIAS QUE  "Pikachu está inspirado en una ardilla?" QUE LOCO...
+    int UserInput;
+    cout << "Cuantos datos deseas leer?: "; 
+    cin >> UserInput; 
+    cout << "Your number is: " << UserInput;
+    
+    int list[UserInput];
 
     XD.Read(list);
 
-    int SZ=100;
+    int SZ=UserInput;
 
     XD.printVector(list,SZ);
 
